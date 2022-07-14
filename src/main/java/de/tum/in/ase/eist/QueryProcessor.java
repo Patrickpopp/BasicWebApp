@@ -16,7 +16,7 @@ public class QueryProcessor {
         } else if (query.contains("plus")) {
             String x =query;
             int first = Integer.parseInt(x.substring(0,x.indexOf(" ")));
-            int second = Integer.parseInt(x.substring(x.indexOf("s")+1));
+            int second = Integer.parseInt(x.substring(x.indexOf("s")));
             return String.valueOf(first+second);
         }else if(query.contains("largest")){ // TODO extend the programm here
             String numberOnly = query.replaceAll("\\D,", "");
